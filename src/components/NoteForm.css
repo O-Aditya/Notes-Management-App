@@ -1,0 +1,75 @@
+.note-form {
+  background: var(--card-bg);
+  padding: 24px;
+  /* border-radius: var(--radius-md); */
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--primary-color); 
+  margin-bottom: 20px; /* More space between form and list */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 16px;
+  border: 2px solid var(--border-color); /* Thicker border for better visibility */
+  /* border-radius: 8px; */
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+/* Thoughtful UX: Focus State */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1); /* Subtle glow */
+}
+
+/* Error State */
+.input-error {
+  border-color: var(--danger-color) !important;
+  background-color: #fff8f8;
+}
+
+.error-message {
+  color: var(--danger-color);
+  font-size: 0.85rem;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 14px;
+  /* border-radius: 8px; */
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.submit-btn:active {
+  transform: scale(0.98); /* Satisfying "click" feel */
+}

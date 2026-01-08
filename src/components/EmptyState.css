@@ -1,0 +1,24 @@
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    /* border-radius: 8px; */
+    border: 2px dashed #ddd;
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .empty-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .empty-state h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+  }
+  
+  .empty-state p {
+    margin: 0;
+    font-size: 0.95rem;
+  }

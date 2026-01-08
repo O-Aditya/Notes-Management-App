@@ -1,0 +1,67 @@
+body {
+  font-family: "JetBrains Mono", monospace;
+}
+
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.code-block {
+  /* Optional: enable ligatures for a better coding experience */
+  font-feature-settings: "liga" 1;
+}
+
+/* Reset basic margins */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  min-height: 100vh;
+  /* border-radius: var(--radius-md); */
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--primary-color); 
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 0px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-section {
+  min-height: 200px; /* Prevents layout jump when switching states */
+ 
+}
+
+.section-title {
+  color: var(--text-main);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-color); /* Adds a nice underline */
+}

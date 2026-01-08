@@ -1,0 +1,71 @@
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.note-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  /* border-radius: var(--radius-md); */
+  padding: 20px;
+  margin-bottom: 16px;
+  /* Animation for new items */
+  animation: slideIn 0.3s ease-out forwards;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hover effect to show interactivity */
+.note-item:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: #d1d9e0;
+}
+
+.note-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.note-title {
+  margin: 0 0 6px 0;
+  font-size: 1.15rem;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.note-description {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #bdc3c7; /* Subtle by default */
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 20px;
+}
+
+/* Thoughtful UX: Delete warning state */
+.delete-btn:hover {
+  color: var(--danger-color);
+  background-color: var(--danger-bg);
+  transform: rotate(90deg); /* Playful interaction */
+}

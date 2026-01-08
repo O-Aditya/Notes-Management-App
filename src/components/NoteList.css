@@ -1,0 +1,30 @@
+.note-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  /* KEY FIX: Scrollable Area */
+  max-height: 300px;      /* Maximum height before scrolling starts */
+  overflow-y: auto;       /* Adds a scrollbar only when needed */
+  padding-right: 8px;     /* Space for the scrollbar so it doesn't overlap text */
+  padding-top: 10px;
+}
+
+/* Custom Scrollbar Styling (Optional polish) */
+.note-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.note-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.note-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.note-list::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
